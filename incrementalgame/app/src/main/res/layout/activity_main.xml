@@ -1,0 +1,219 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/gradient"
+    tools:context=".MainActivity">
+
+    <!-- TODO: add tooltips for meditation btn displaying clicks per second
+               hide breakthrough button until progessbar is full
+               link progress bar to xp-->
+
+    <Button
+        android:id="@+id/btnTraining"
+        style="@drawable/button_style"
+        android:layout_width="120dp"
+        android:layout_height="50dp"
+        android:background="@color/darkBlue"
+        android:padding="10dp"
+        android:text="Training"
+        android:textColor="@color/white"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteX="14dp"
+        tools:layout_editor_absoluteY="524dp" />
+
+    <Button
+        android:id="@+id/btnLegacy"
+        style="@drawable/button_style"
+        android:layout_width="120dp"
+        android:layout_height="50dp"
+        android:layout_marginBottom="10dp"
+        android:background="@color/darkBlue"
+        android:padding="10dp"
+        android:text="Legacy"
+        android:textColor="@color/white"
+        app:layout_constraintBottom_toTopOf="@+id/btnFight"
+        app:layout_constraintEnd_toStartOf="@+id/btnStore"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/btnTraining"
+        tools:ignore="MissingConstraints" />
+
+    <Button
+        android:id="@+id/btnFight"
+        style="@drawable/button_style"
+        android:layout_width="390dp"
+        android:layout_height="50dp"
+        android:background="@color/darkBlue"
+        android:padding="10dp"
+        android:text="Fight"
+        android:textColor="@color/white"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteY="584dp" />
+
+    <TextView
+        android:id="@+id/tvScore"
+        android:layout_width="154dp"
+        android:layout_height="31dp"
+        android:gravity="center"
+        android:text="TextView"
+        android:textColor="#FFFFFF"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.144"
+        tools:ignore="MissingConstraints"
+        tools:text="0 Spirit Stones" />
+
+    <Button
+        android:id="@+id/btnStore"
+        style="@drawable/button_style"
+        android:layout_width="120dp"
+        android:layout_height="50dp"
+        android:background="@color/darkBlue"
+        android:padding="10dp"
+        android:text="Store"
+        android:textColor="@color/white"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteX="278dp"
+        tools:layout_editor_absoluteY="524dp" />
+
+    <TextView
+        android:id="@+id/tvLevel"
+        android:layout_width="79dp"
+        android:layout_height="45dp"
+        android:gravity="center"
+        android:text="Mortal"
+        android:textColor="#FFFFFF"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/tvPower"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/ibMonk" />
+
+    <Button
+        android:id="@+id/btnAutoClicker"
+        style="@drawable/button_style"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:background="@color/darkBlue"
+        android:padding="10dp"
+        android:text="Secluded Meditation - 10 S.S"
+        android:textColor="@color/white"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:layout_editor_absoluteY="449dp" />
+
+    <TextView
+        android:id="@+id/tvPower"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="56dp"
+        android:text="Power: 0.10"
+        android:textColor="#FFFFFF"
+        android:textSize="14sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/ibMonk" />
+
+    <TextView
+        android:id="@+id/tvXp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="XP: 0"
+        android:textColor="#FFFFFF"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tvPower" />
+
+    <ImageButton
+        android:id="@+id/ibMonk"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@android:color/transparent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:srcCompat="@drawable/monk"
+        tools:layout_editor_absoluteY="142dp" />
+
+    <ImageButton
+        android:id="@+id/ibSettings"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="460dp"
+        android:layout_marginEnd="5dp"
+        android:background="@android:color/transparent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.957"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/settings" />
+
+    <ProgressBar
+        android:id="@+id/progressBar"
+        style="?android:attr/progressBarStyleHorizontal"
+        android:layout_width="370dp"
+        android:layout_height="20dp"
+        android:progressTint="@color/darkBlue"
+        app:layout_constraintBottom_toTopOf="@+id/btnBreakthrough"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/btnBreakthrough"
+        style="@drawable/button_style"
+        android:layout_width="345dp"
+        android:layout_height="42dp"
+        android:background="@color/darkBlue"
+        android:text="Hidden until progress is full"
+        android:textColor="#FFFFFF"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:layout_editor_absoluteY="36dp" />
+
+    <androidx.fragment.app.FragmentContainerView
+        android:id="@+id/trainingFragment"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        tools:ignore="MissingConstraints" />
+
+    <androidx.fragment.app.FragmentContainerView
+        android:id="@+id/fightingFragment"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        tools:ignore="MissingConstraints" />
+
+    <androidx.fragment.app.FragmentContainerView
+        android:id="@+id/legacyFragment"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        tools:ignore="MissingConstraints" />
+
+    <androidx.fragment.app.FragmentContainerView
+        android:id="@+id/storeFragment"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        tools:ignore="MissingConstraints" />
+
+    <androidx.fragment.app.FragmentContainerView
+        android:id="@+id/settingsFragment"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

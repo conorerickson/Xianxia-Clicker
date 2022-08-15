@@ -1,0 +1,368 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/gradient"
+    tools:context=".FightFragment">
+
+    <!-- TODO: add tooltips for the + buttons displaying the cost in S.S
+               add tooltips for the fight buttons displaying the required
+               power to ensure a win-->
+
+    <TextView
+        android:id="@+id/plWholeSect"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="8.0"
+        android:textColor="#FFFFFF"
+        android:textStyle="bold"
+        tools:layout_editor_absoluteX="207dp"
+        tools:layout_editor_absoluteY="528dp" />
+
+    <TextView
+        android:id="@+id/plSectLeader"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="6.3"
+        android:textColor="#FFFFFF"
+        android:textStyle="bold"
+        tools:layout_editor_absoluteX="207dp"
+        tools:layout_editor_absoluteY="445dp" />
+
+    <TextView
+        android:id="@+id/plAncestor"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="4.3"
+        android:textColor="#FFFFFF"
+        android:textStyle="bold"
+        tools:layout_editor_absoluteX="195dp"
+        tools:layout_editor_absoluteY="370dp" />
+
+    <TextView
+        android:id="@+id/plElder"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="3.0"
+        android:textColor="#FFFFFF"
+        android:textStyle="bold"
+        tools:layout_editor_absoluteX="195dp"
+        tools:layout_editor_absoluteY="280dp" />
+
+    <TextView
+        android:id="@+id/plNoble"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="1.0"
+        android:textColor="#FFFFFF"
+        android:textStyle="bold"
+        tools:layout_editor_absoluteX="195dp"
+        tools:layout_editor_absoluteY="128dp" />
+
+    <TextView
+        android:id="@+id/plSenior"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="1.9"
+        android:textColor="#FFFFFF"
+        android:textStyle="bold"
+        tools:layout_editor_absoluteX="195dp"
+        tools:layout_editor_absoluteY="206dp" />
+
+    <TextView
+        android:id="@+id/rewardTxtSectLeader"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="3125"
+        android:textColor="#FFFFFF"
+        android:textStyle="bold"
+        tools:layout_editor_absoluteX="338dp"
+        tools:layout_editor_absoluteY="446dp" />
+
+    <TextView
+        android:id="@+id/rewardTxtWholeSect"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="15625"
+        android:textColor="#FFFFFF"
+        android:textStyle="bold"
+        tools:layout_editor_absoluteX="338dp"
+        tools:layout_editor_absoluteY="528dp" />
+
+    <TextView
+        android:id="@+id/rewardTxtAncestor"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="625"
+        android:textColor="#FFFFFF"
+        android:textStyle="bold"
+        tools:layout_editor_absoluteX="338dp"
+        tools:layout_editor_absoluteY="370dp" />
+
+    <TextView
+        android:id="@+id/rewardTxtElder"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="125 S.S"
+        android:textColor="#FFFFFF"
+        android:textStyle="bold"
+        tools:layout_editor_absoluteX="338dp"
+        tools:layout_editor_absoluteY="280dp" />
+
+    <TextView
+        android:id="@+id/rewardTxtSenior"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="25"
+        android:textColor="#FFFFFF"
+        android:textStyle="bold"
+        tools:layout_editor_absoluteX="338dp"
+        tools:layout_editor_absoluteY="194dp" />
+
+    <TextView
+        android:id="@+id/rewardTxtNoble"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="5"
+        android:textColor="#FFFFFF"
+        android:textStyle="bold"
+        tools:layout_editor_absoluteX="338dp"
+        tools:layout_editor_absoluteY="128dp" />
+
+    <Button
+        android:id="@+id/plusAncestor"
+        android:layout_width="47dp"
+        android:layout_height="47dp"
+        android:text="+"
+        android:padding="10dp"
+        style="@drawable/button_style"
+        android:background="@color/darkBlue"
+        android:textColor="@color/white"
+        tools:layout_editor_absoluteX="245dp"
+        tools:layout_editor_absoluteY="360dp" />
+
+    <Button
+        android:id="@+id/plusSectLeader"
+        android:layout_width="47dp"
+        android:layout_height="47dp"
+        android:text="+"
+        android:padding="10dp"
+        style="@drawable/button_style"
+        android:background="@color/darkBlue"
+        android:textColor="@color/white"
+        tools:layout_editor_absoluteX="245dp"
+        tools:layout_editor_absoluteY="438dp" />
+
+    <Button
+        android:id="@+id/plusWholeSect"
+        android:layout_width="47dp"
+        android:layout_height="47dp"
+        android:text="+"
+        style="@drawable/button_style"
+        android:padding="10dp"
+        android:background="@color/darkBlue"
+        android:textColor="@color/white"
+        tools:layout_editor_absoluteX="245dp"
+        tools:layout_editor_absoluteY="516dp" />
+
+    <Button
+        android:id="@+id/plusElder"
+        android:layout_width="47dp"
+        android:layout_height="47dp"
+        android:text="+"
+        style="@drawable/button_style"
+        android:background="@color/darkBlue"
+        android:textColor="@color/white"
+        android:padding="10dp"
+        tools:layout_editor_absoluteX="245dp"
+        tools:layout_editor_absoluteY="272dp" />
+
+    <Button
+        android:id="@+id/plusSenior"
+        android:layout_width="47dp"
+        android:layout_height="47dp"
+        android:text="+"
+        style="@drawable/button_style"
+        android:background="@color/darkBlue"
+        android:textColor="@color/white"
+        android:padding="10dp"
+        tools:layout_editor_absoluteX="245dp"
+        tools:layout_editor_absoluteY="194dp" />
+
+    <Button
+        android:id="@+id/plusNoble"
+        android:layout_width="47dp"
+        android:layout_height="47dp"
+        android:text="+"
+        style="@drawable/button_style"
+        android:background="@color/darkBlue"
+        android:textColor="@color/white"
+        android:padding="10dp"
+        tools:layout_editor_absoluteX="245dp"
+        tools:layout_editor_absoluteY="118dp" />
+
+    <Button
+        android:id="@+id/mortal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Fight a Mortal"
+        android:background="@color/darkBlue"
+        style="@drawable/button_style"
+        android:textColor="@color/white"
+        android:padding="10dp"
+        tools:layout_editor_absoluteX="16dp"
+        tools:layout_editor_absoluteY="40dp" />
+
+    <Button
+        android:id="@+id/noble"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Fight a noble"
+        style="@drawable/button_style"
+        android:background="@color/darkBlue"
+        android:textColor="@color/white"
+        android:padding="10dp"
+        tools:layout_editor_absoluteX="16dp"
+        tools:layout_editor_absoluteY="116dp" />
+
+    <Button
+        android:id="@+id/senior"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Fight a Senior"
+        style="@drawable/button_style"
+        android:textColor="@color/white"
+        android:padding="10dp"
+        android:background="@color/darkBlue"
+        tools:layout_editor_absoluteX="16dp"
+        tools:layout_editor_absoluteY="193dp" />
+
+    <Button
+        android:id="@+id/elder"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Fight an Elder"
+        android:textColor="@color/white"
+        style="@drawable/button_style"
+        android:background="@color/darkBlue"
+        android:padding="10dp"
+        tools:layout_editor_absoluteX="16dp"
+        tools:layout_editor_absoluteY="271dp" />
+
+    <Button
+        android:id="@+id/ancestor"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Fight an Ancestor"
+        android:textColor="@color/white"
+        style="@drawable/button_style"
+        android:background="@color/darkBlue"
+        android:padding="10dp"
+        tools:layout_editor_absoluteX="16dp"
+        tools:layout_editor_absoluteY="359dp" />
+
+    <Button
+        android:id="@+id/sectLeader"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Fight the Sect leader"
+        style="@drawable/button_style"
+        android:textColor="@color/white"
+        android:background="@color/darkBlue"
+        android:padding="10dp"
+        tools:layout_editor_absoluteX="16dp"
+        tools:layout_editor_absoluteY="436dp" />
+
+    <Button
+        android:id="@+id/entireSect"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Fight the whole sect"
+        style="@drawable/button_style"
+        android:background="@color/darkBlue"
+        android:textColor="@color/white"
+        android:padding="10dp"
+        tools:layout_editor_absoluteX="16dp"
+        tools:layout_editor_absoluteY="516dp" />
+
+    <TextView
+        android:id="@+id/tvFightingFragmentPower"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Your current power is: 0.10"
+        android:textColor="#000000"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:layout_editor_absoluteY="597dp" />
+
+    <TextView
+        android:id="@+id/tvPlusText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="+"
+        android:textColor="#FFFFFF"
+        android:textSize="14sp"
+        android:textStyle="bold"
+        tools:layout_editor_absoluteX="268dp"
+        tools:layout_editor_absoluteY="7dp" />
+
+    <TextView
+        android:id="@+id/tvPowerLevelTxt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Power Level"
+        android:textColor="#FFFFFF"
+        android:textSize="12sp"
+        android:textStyle="bold"
+        tools:layout_editor_absoluteX="172dp"
+        tools:layout_editor_absoluteY="7dp" />
+
+    <TextView
+        android:id="@+id/tvRewardText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="16dp"
+        android:text="Rewards (S.S)"
+        android:textColor="#FFFFFF"
+        android:textSize="12sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        tools:layout_editor_absoluteY="7dp" />
+
+    <Button
+        android:id="@+id/plusMortal"
+        android:layout_width="47dp"
+        android:layout_height="47dp"
+        android:text="+"
+        android:padding="10dp"
+        android:textColor="@color/white"
+        style="@drawable/button_style"
+        android:background="@color/darkBlue"
+        tools:layout_editor_absoluteX="245dp"
+        tools:layout_editor_absoluteY="41dp" />
+
+    <TextView
+        android:id="@+id/rewardTxtMortal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="1"
+        android:textColor="#FFFFFF"
+        android:textStyle="bold"
+        tools:layout_editor_absoluteX="338dp"
+        tools:layout_editor_absoluteY="52dp" />
+
+    <TextView
+        android:id="@+id/plMortal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="0.1"
+        android:textColor="#FFFFFF"
+        android:textStyle="bold"
+        tools:layout_editor_absoluteX="195dp"
+        tools:layout_editor_absoluteY="52dp" />
+</androidx.constraintlayout.widget.ConstraintLayout>
